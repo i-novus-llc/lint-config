@@ -24,7 +24,9 @@ const config: Linter.Config = {
     plugins: [
         "@typescript-eslint",
         "import",
-        "sonarjs"
+        "sonarjs",
+        "optimize-regex",
+        "typescript-sort-keys"
     ],
     "settings": {
         "import/resolver": "typescript"
