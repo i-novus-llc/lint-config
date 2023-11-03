@@ -1,6 +1,13 @@
 # compiled output
 node_modules
 
+.env
+.env.*
+!.env.example
+
+# Build output
+dist
+
 # Yarn
 .pnp.*
 .yarn/*
@@ -8,7 +15,6 @@ node_modules
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
-!.yarn/versions
 
 # OS
 .DS_Store
@@ -26,6 +32,3 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-
-# Build output
-dist/

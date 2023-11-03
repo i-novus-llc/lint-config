@@ -1,7 +1,20 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "0.0.4",
+    "version": "0.0.7",
     "description": "Standard ESLint/style config for I-Novus",
+    "author": "I-Novus LLC<n2o@i-novus.ru>",
+    "homepage": "https://www.npmjs.com/package/@i-novus/eslint-config",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/i-novus-llc/eslint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/i-novus-llc/eslint-config/issues"
+    },
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "tsc"
+    },
     "keywords": [
         "eslint",
         "stylelint",
@@ -14,31 +27,19 @@
         "i-novus",
         "i-novus eslint"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "files": [
         "dist",
         "package.json",
         "README.md",
-        "LICENSE.txt"
+        "LICENSE"
     ],
     "exports": {
         ".": "./dist/node.js",
         "./node": "./dist/node.js",
         "./react": "./dist/react.js"
-    },
-    "author": "I-Novus LLC<n2o@i-novus.ru>",
-    "license": "Apache-2.0",
-    "publishConfig": {
-        "access": "public"
-    },
-    "homepage": "https://www.npmjs.com/package/@i-novus/eslint-config",
-    "scripts": {
-        "build": "tsc",
-        "version:major": "yarn version --major",
-        "version:minor": "yarn version --minor",
-        "version:patch": "yarn version --patch",
-        "publish:major": "npm run build&&npm run version:major&&npm publish --access public",
-        "publish:minor": "npm run build&&npm run version:minor&&npm publish --access public",
-        "publish:patch": "npm run build&&npm run version:patch&&npm publish --access public"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.59.8 || ^6.0.0",
