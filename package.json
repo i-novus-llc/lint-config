@@ -37,9 +37,10 @@
         "LICENSE"
     ],
     "exports": {
-        ".": "./dist/node.js",
+        ".": "./dist/react.js",
         "./node": "./dist/node.js",
-        "./react": "./dist/react.js"
+        "./react": "./dist/react.js",
+        "./styles": "./dist/styles.js"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.59.8 || ^6.0.0",
