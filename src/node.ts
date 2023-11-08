@@ -233,7 +233,7 @@ const config: Linter.Config = {
         'sonarjs/prefer-immediate-return': 'error',
         // if(true) { return true } else { return false }
         'sonarjs/prefer-single-boolean-return': 'error',
-        'spaced-comment': ['error', 'always'],
+        'spaced-comment': ['error', 'always', { "markers": ["/"] }],
         // Выкидываем предупреждения, если ключи в типах не в алфавитном порядке
         'typescript-sort-keys/interface': 'warn',
         'typescript-sort-keys/string-enum': 'warn',
