@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Standard ESLint/style config for I-Novus",
     "author": "I-Novus LLC<n2o@i-novus.ru>",
     "homepage": "https://www.npmjs.com/package/@i-novus/eslint-config",
