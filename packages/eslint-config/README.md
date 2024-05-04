@@ -44,3 +44,7 @@ If you want to use this config in React project, you have to extend it from /rea
   }
 }
 ```
+
+## License
+
+[Apache-2.0](./LICENSE)
