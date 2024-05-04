@@ -7,7 +7,13 @@ it supports. For example, webpack 4 eslint-loader supports eslint up to version 
 _^eslint7.0.0_:
 
 ```shell
-yarn add -D @i-novus/eslint-config eslint
+npm install --save-dev @i-novus/eslint-config eslint
+```
+
+or
+
+```shell
+yarn add --dev @i-novus/eslint-config eslint
 ```
 
 ## Usage
