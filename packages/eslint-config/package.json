@@ -59,7 +59,8 @@
         "eslint-plugin-sonarjs": "^0.17.0",
         "eslint-plugin-typescript-sort-keys": "2.3.0",
         "stylelint-config-clean-order": "^5.4.2",
-        "stylelint-config-recommended-scss": "^14.0.0"
+        "stylelint-config-recommended-scss": "^14.0.0",
+        "stylelint-config-standard": "^36.0.0"
     },
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "*",
