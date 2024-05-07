@@ -48,9 +48,6 @@
         "./styles": "./dist/styles.js"
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.59.8 || ^6.0.0",
-        "@typescript-eslint/parser": "^5.59.8 || ^6.0.0",
-        "eslint": "^7.0.0 || ^8.0.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-typescript": "^3.5.5",
@@ -60,7 +57,15 @@
         "eslint-plugin-react": "^7.32.2",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-sonarjs": "^0.17.0",
-        "eslint-plugin-typescript-sort-keys": "2.3.0"
+        "eslint-plugin-typescript-sort-keys": "2.3.0",
+        "stylelint-config-clean-order": "^5.4.2",
+        "stylelint-config-recommended-scss": "^14.0.0"
+    },
+    "peerDependencies": {
+        "@typescript-eslint/eslint-plugin": "*",
+        "@typescript-eslint/parser": "*",
+        "eslint": "*",
+        "stylelint": "*"
     },
     "devDependencies": {
         "@types/eslint": "^8.21.1",

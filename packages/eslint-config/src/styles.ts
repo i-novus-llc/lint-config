@@ -1,8 +1,8 @@
 const config = {
-    extends: 'stylelint-config-standard',
-    plugins: [
-        'stylelint-scss',
-        'stylelint-order',
+    extends: [
+        'stylelint-config-standard',
+        'stylelint-config-recommended-scss',
+        'stylelint-config-clean-order'
     ],
     rules: {
         'at-rule-no-unknown': null,

@@ -1,49 +1,75 @@
 # @i-novus/eslint-config
 
-## Installation
+[![NPM version](https://img.shields.io/npm/v/@i-novus/eslint-config.svg)](https://www.npmjs.org/package/@i-novus/eslint-config)
 
-If you are using eslint-loader in your build config don't forget to check the last version
-it supports. For example, webpack 4 eslint-loader supports eslint up to version 7, so install
-_^eslint7.0.0_:
+## Установка
 
 ```shell
-npm install --save-dev @i-novus/eslint-config eslint
+npm install --save-dev @i-novus/eslint-config
 ```
 
 or
 
 ```shell
-yarn add --dev @i-novus/eslint-config eslint
+yarn add --dev @i-novus/eslint-config
 ```
 
-## Usage
+А так же понадобятся `eslint`, `stylelint`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`.
 
-1. Add `.eslintrc` to the project root. Base config suits for node project usage
+
+## Использование ESLint
+
+1. Добавьте `.eslintrc.json` в корень проекта.
+
+### Правила react
 
 ```json
 {
   "extends": ["@i-novus/eslint-config"]
-  // or "extends": ["@i-novus/eslint-config/node"]
+  // or "extends": ["@i-novus/eslint-config/react"]
 }
 ```
 
-If you want to use this config in React project, you have to extend it from /react import path
-
+### Правила nodejs
 ```json
 {
-  "extends": ["@i-novus/eslint-config/react"]
+  "extends": ["@i-novus/eslint-config/node"]
 }
 ```
 
-2. Add script to `package.json`
+2. Добавить скрипт в `package.json`
 
 ```json
 {
   "scripts": {
-    "lint": "eslint src/ --fix"
+    "lint": "eslint src/"
   }
 }
 ```
+
+
+## Использование stylelint
+
+1. Добавьте `stylelint.config.cjs` в корень проекта.
+
+```js
+module.exports = {
+    extends: [
+        '@i-novus/eslint-config'
+    ]
+}
+```
+
+2. Добавить скрипт в `package.json`
+
+```json
+{
+  "scripts": {
+    "lint": "stylelint \"src/**/*.{css,scss,sass}\""
+  }
+}
+```
+
 
 ## License
 
