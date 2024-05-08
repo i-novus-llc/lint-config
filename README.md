@@ -55,7 +55,7 @@ yarn add --dev @i-novus/eslint-config
 ```js
 module.exports = {
     extends: [
-        '@i-novus/eslint-config'
+        '@i-novus/eslint-config/styles'
     ]
 }
 ```
