@@ -58,6 +58,14 @@ const config: Linter.Config = {
         'react/state-in-constructor': 'off',
         'react/static-property-placement': 'off',
     },
+    overrides: [
+        {
+            files: ['*.d.ts'],
+            rules: {
+                'import/no-default-export': 'off',
+            },
+        },
+    ],
 }
 
 module.exports = config
