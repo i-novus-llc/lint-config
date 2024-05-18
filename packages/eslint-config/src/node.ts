@@ -154,7 +154,7 @@ const config: Linter.Config = {
         'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
         // Разрешает переприсваивать значение аргументам функций
         'no-param-reassign': ['error', {
-            'ignorePropertyModificationsFor': ['out', 'req', 'reply'],
+            'ignorePropertyModificationsFor': ['out', 'req', 'res', 'reply'],
             'ignorePropertyModificationsForRegex': ['^_'],
             'props': true,
         }],
@@ -239,6 +239,8 @@ const config: Linter.Config = {
         'typescript-sort-keys/string-enum': 'warn',
         // Теперь при сравнении можно писать числа слева от знака, н.р.: 6 < from
         'yoda': ['off'],
+        // Deprecated https://eslint.org/docs/latest/rules/no-spaced-func
+        'no-spaced-func': ['off'],
     },
     overrides: [
         {
