@@ -6,12 +6,8 @@ const config = {
     ],
     rules: {
         'at-rule-no-unknown': null,
-        // Следующие 2 правила запрещают однострочные CSS-классы
-        'block-closing-brace-newline-before': 'always',
-        'block-opening-brace-newline-after': 'always',
-        // Отступ в 4 пробела
-        'indentation': 4,
         'scss/at-rule-no-unknown': true,
+        'declaration-block-single-line-max-declarations': 0,
         // Не использовать & в селекторе, если он не нужен: & a {}
         'scss/selector-no-redundant-nesting-selector': true,
         // Запрет на использование & при формировании имени класса: &-focused {}
