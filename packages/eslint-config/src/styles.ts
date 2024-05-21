@@ -31,6 +31,12 @@ const config = {
                     },
                 ],
             }
+        },
+        {
+            files: ['*.scss'],
+            rules: {
+                'import-notation': 'string',
+            }
         }
     ],
 }
