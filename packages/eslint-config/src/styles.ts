@@ -12,7 +12,27 @@ const config = {
         'scss/selector-no-redundant-nesting-selector': true,
         // Запрет на использование & при формировании имени класса: &-focused {}
         'scss/selector-no-union-class-name': true,
+        // Проверка правильности написания имен классов
+        'selector-class-pattern': [
+            '^([a-z][a-z0-9]*((-|--|_|__)[a-z0-9]+)*)$',
+            {
+                message: (selector: string) => `Expected class selector "${selector}" to be kebab-case, snake_case or BEM`,
+            },
+        ],
     },
+    overrides: [
+        {
+            files: ['*.module.css', '*.module.scss'],
+            rules: {
+                'selector-class-pattern': [
+                    '^([a-z][a-zA-Z0-9]*)$',
+                    {
+                        message: (selector: string) => `Expected class selector "${selector}" to be camelCase`,
+                    },
+                ],
+            }
+        }
+    ],
 }
 
 module.exports = config
