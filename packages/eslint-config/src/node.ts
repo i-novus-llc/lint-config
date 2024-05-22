@@ -46,7 +46,9 @@ const config: Linter.Config = {
         '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/consistent-type-imports': 'off',
         '@typescript-eslint/default-param-last': ['error'],
-        '@typescript-eslint/indent': ['error', 4],
+        '@typescript-eslint/indent': ['error', 4, {
+            ignoredNodes: ['TSTypeParameterInstantiation']
+        }],
         '@typescript-eslint/method-signature-style': ['error', 'method'],
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/no-confusing-non-null-assertion': 'warn',
