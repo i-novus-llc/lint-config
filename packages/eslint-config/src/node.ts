@@ -47,7 +47,8 @@ const config: Linter.Config = {
         '@typescript-eslint/consistent-type-imports': 'off',
         '@typescript-eslint/default-param-last': ['error'],
         '@typescript-eslint/indent': ['error', 4, {
-            ignoredNodes: ['TSTypeParameterInstantiation']
+            ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild', 'TSTypeParameterInstantiation'],
+            SwitchCase: 1,
         }],
         '@typescript-eslint/method-signature-style': ['error', 'method'],
         '@typescript-eslint/naming-convention': 'off',
@@ -242,7 +243,7 @@ const config: Linter.Config = {
         // Теперь при сравнении можно писать числа слева от знака, н.р.: 6 < from
         'yoda': ['off'],
         // Deprecated https://eslint.org/docs/latest/rules/no-spaced-func
-        'no-spaced-func': ['off'],
+        'no-spaced-func': ['off']
     },
     overrides: [
         {
