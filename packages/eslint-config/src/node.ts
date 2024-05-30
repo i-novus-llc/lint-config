@@ -142,7 +142,8 @@ const config: Linter.Config = {
         'max-len': ['error', {
             'code': 120,
             'ignoreComments': true,
-            'ignorePattern': '^ *(declare)',
+            // При объявлении функций - деклатация типа может быть очень длинной, а линтер очень плохо работает с переносами внутри дженериков
+            'ignorePattern': '^ *(declare|import|export|const)',
             'ignoreRegExpLiterals': true,
             'ignoreStrings': true,
             'ignoreTemplateLiterals': true,
