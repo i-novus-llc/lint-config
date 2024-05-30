@@ -239,8 +239,8 @@ const config: Linter.Config = {
         'sonarjs/prefer-single-boolean-return': 'error',
         'spaced-comment': ['error', 'always', { "markers": ["/"] }],
         // Выкидываем предупреждения, если ключи в типах не в алфавитном порядке
-        'typescript-sort-keys/interface': 'warn',
-        'typescript-sort-keys/string-enum': 'warn',
+        'typescript-sort-keys/interface': ['off'],
+        'typescript-sort-keys/string-enum': 'off',
         // Теперь при сравнении можно писать числа слева от знака, н.р.: 6 < from
         'yoda': ['off'],
         // Deprecated https://eslint.org/docs/latest/rules/no-spaced-func
